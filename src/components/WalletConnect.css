@@ -1,0 +1,129 @@
+.wallet-connect {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wallet-status {
+  border: 1px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connect-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.connect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.connect-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wallet-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-info, .network-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.account-label, .network-label {
+  font-weight: 600;
+  color: #666;
+  min-width: 50px;
+}
+
+.account-address {
+  font-family: 'Monaco', 'Consolas', monospace;
+  background: #f5f7fa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.network-name {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.wallet-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.network-selector {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.network-selector:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.disconnect-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.disconnect-btn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 480px) {
+  .wallet-connect {
+    padding: 16px;
+  }
+  
+  .wallet-actions {
+    flex-direction: column;
+  }
+  
+  .network-selector {
+    width: 100%;
+  }
+}
