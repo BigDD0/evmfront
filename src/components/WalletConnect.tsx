@@ -27,17 +27,17 @@ const WalletConnect = () => {
             disabled={isLoading}
             className="connect-btn"
           >
-            {isLoading ? '连接中...' : '连接钱包'}
+            {isLoading ? 'Connecting...' : 'Connect Wallet'}
           </button>
         ) : (
           <div className="wallet-info">
             <div className="wallet-details">
               <div className="account-info">
-                <span className="account-label">地址:</span>
+                <span className="account-label">Address:</span>
                 <span className="account-address">{formatAddress(account!)}</span>
               </div>
               <div className="network-info">
-                <span className="network-label">网络:</span>
+                <span className="network-label">Network:</span>
                 <span className="network-name">{getNetworkName(chainId!)}</span>
               </div>
             </div>
@@ -53,7 +53,7 @@ const WalletConnect = () => {
                 <option value="11155111">Sepolia</option>
               </select>
               <button onClick={disconnectWallet} className="disconnect-btn">
-                断开连接
+                Disconnect
               </button>
             </div>
           </div>
